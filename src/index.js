@@ -9,6 +9,7 @@ export default function WhatsAppWidget({
   message = `Hello! 👋🏼 \n\nWhat can we do for you?`,
   companyName = 'Support',
   sendButton = 'Send',
+  notif = 'Need help? send message',
   phoneNumber
 }) {
   return (
@@ -20,8 +21,10 @@ export default function WhatsAppWidget({
           phoneNumber={phoneNumber}
           sendButton={sendButton}
           message={message}
+          notif={notif}
         />
         <WhatsAppButton />
+        <div className={styles.notif}>{notif}</div>
       </WidgetContextProvider>
     </div>
   )
