@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './SendButton.module.css'
 
-export default function SendButton({ sendButton, phoneNumber, placeholder }) {
+export default function SendButton({ sendButton, phoneNumber, notif }) {
   const handleSend = () => {
     if (!phoneNumber) {
       window.alert('Invalid Phone Number')
