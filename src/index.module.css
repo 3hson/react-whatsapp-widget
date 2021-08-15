@@ -27,13 +27,14 @@
   color: #928b8b;
   cursor: pointer;
   border-radius: 11px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   height: 32px;
-  line-height: 32px;
-  position: absolute;
-  bottom: 26px;
+  line-height: 16px;
+  position: relative;
+  bottom: 32px;
   padding: 0.5rem;
   right: 106px;
+  font-weight: bold;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .notif {
