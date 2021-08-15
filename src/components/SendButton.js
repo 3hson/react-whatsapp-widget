@@ -1,20 +1,16 @@
 import React from 'react'
 import styles from './SendButton.module.css'
 
-export default function SendButton({ sendButton, phoneNumber, notif }) {
-  const handleSend = () => {
-    if (!phoneNumber) {
-      window.alert('Invalid Phone Number')
-      return false
-    }
-    window.open(`https://web.whatsapp.com/send?phone=${phoneNumber}`)
-  }
-
+export default function SendButton({ sendButton, phoneNumber }) {
   return (
     <div className={styles.root}>
-      <button className={styles.button} onClick={handleSend}>
+      <a
+        target='_balnk'
+        className={styles.button}
+        href={`https://web.whatsapp.com/send?phone=${phoneNumber}`}
+      >
         {sendButton}
-      </button>
+      </a>
     </div>
   )
 }
