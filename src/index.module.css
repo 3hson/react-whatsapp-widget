@@ -21,24 +21,10 @@
   }
 }  */
 
-.notif {
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 15%) 0px 3px 12px;
-  color: #928b8b;
-  cursor: pointer;
-  border-radius: 11px;
-  font-size: 0.75rem;
-  height: 32px;
-  line-height: 16px;
-  position: relative;
-  bottom: 36px;
-  padding: 0.5rem;
-  right: 106px;
-  font-weight: bold;
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .notif {
-    right: 86px;
-  }
-}
 
+.root {
+  text-align: right;
+  position: fixed;
+  bottom: -5px;
+  right: -5px;
+}

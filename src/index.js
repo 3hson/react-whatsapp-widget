@@ -1,6 +1,8 @@
 import React from 'react'
 import App from './components/App'
 import WhatsAppButton from './components/WhatsAppButton'
+import Notif from './components/Notif'
+
 import { WidgetContextProvider } from './context/widgetContext'
 import styles from './index.module.css'
 
@@ -24,7 +26,7 @@ export default function WhatsAppWidget({
           notif={notif}
         />
         <WhatsAppButton />
-        <div className={styles.notif}>{notif}</div>
+        <Notif notif={notif} />
       </WidgetContextProvider>
     </div>
   )

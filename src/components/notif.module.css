@@ -1,0 +1,28 @@
+.notif {
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 15%) 0px 3px 12px;
+  color: #928b8b;
+  cursor: pointer;
+  border-radius: 11px;
+  font-size: 0.75rem;
+  height: 16px;
+  line-height: 16px;
+  position: relative;
+  bottom: 28px;
+  padding: 0.5rem;
+  right: 86px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .notif {
+    right: 76px;
+  }
+}
+
