@@ -8,14 +8,14 @@
   cursor: pointer;
   display: flex;
   font-size: 2em;
-  height: 64px;
+  height: 48px;
   justify-content: center;
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
   outline: transparent;
   user-select: none;
-  width: 64px;
+  width: 48px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   position: absolute;

@@ -1,16 +1,18 @@
 import React from 'react'
 import styles from './SendButton.module.css'
 
-export default function SendButton({
-  sendButton,
-  phoneNumber = '989937789718'
-}) {
+export default function SendButton({ sendButton, phoneNumber }) {
   return (
     <div className={styles.root}>
       <a
-        target='_balnk'
         className={styles.button}
-        href={`https://wa.me/${phoneNumber}`}
+        href={
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+            ? `https://api.whatsapp.com/send?phone=${phoneNumber}`
+            : `https://web.whatsapp.com/send?phone=${phoneNumber}`
+        }
       >
         {sendButton}
       </a>
