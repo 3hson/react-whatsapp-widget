@@ -12,11 +12,12 @@ export default function App(props) {
   const ref = React.useRef(null)
   useOnClickOutside(ref, () => setIsOpen(false))
   return (
-    <div className={`${styles.root} ${isOpen ? styles.open : styles.close}`}>
+    <div
+      ref={ref}
+      className={`${styles.root} ${isOpen ? styles.open : styles.close}`}
+    >
       <Header handleOpen={handleOpen} {...props} />
-      <div ref={ref}>
-        <ChatSection {...props} />
-      </div>
+      <ChatSection {...props} />
       <SendButton {...props} />
     </div>
   )

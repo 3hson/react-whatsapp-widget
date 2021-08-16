@@ -5,7 +5,7 @@
   cursor: pointer;
   border-radius: 11px;
   font-size: 0.75rem;
-  height: 16px;
+  height: 32px;
   line-height: 16px;
   position: relative;
   bottom: 28px;
@@ -19,10 +19,3 @@
 .show {
   opacity: 1;
 }
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .notif {
-    right: 76px;
-  }
-}
-
