@@ -11,7 +11,7 @@
   height: 48px;
   justify-content: center;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 0px;
   margin-left: 20px;
   outline: transparent;
   user-select: none;
@@ -21,15 +21,4 @@
   position: absolute;
   bottom: 0px;
   right: 15px;
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .root {
-    margin-right: 0;
-  }
 }
